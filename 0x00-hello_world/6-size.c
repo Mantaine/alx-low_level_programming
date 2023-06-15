@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - this function prints out: size of various types
+ * main - this function prints out size of various types
  * Return: Always succesful
  */
 int main(void)
