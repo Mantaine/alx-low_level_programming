@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - Prints alphabet in lowercase
  * Return: Always a success
  */
