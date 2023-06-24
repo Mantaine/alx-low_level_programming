@@ -2,26 +2,25 @@
 
 /**
  * print_diagonal - printing diagonal
- * @x: input variable
+ * @n: input variable
  * Return: void
  */
 
-void print_diagonal(int x)
+void print_diagonal(int n)
 
 {
-	int m, j;
+	int i, j;
 
-	if (x <= 0)
-	_putchar('\n');
-	for (m = 0; m < x; m++)
-
+	for (i = 0; i < n; i++)
 	{
-	for (j = 0; j < 1; j++)
+	if (n > 1)
+	for (j = 0; j < i; j++)
 	{
 	_putchar(' ');
 	}
 	_putchar('\\');
 	_putchar('\n');
 	}
+	if (n <= 0)
+	_putchar('\n');
 }
-
