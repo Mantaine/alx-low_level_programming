@@ -16,16 +16,19 @@ void puts2(char *str)
 	int o;
 
 	while (*x != '\0')
-
 	{
-	x++;
-	longi++;
+
+		x++;
+		longi++;
 	}
 	h = longi - 1;
-
 	for (o = 0; o <= h ; o++)
 	{
 	if (o % 2 == 0)
+	{
+
 	_putchar(str[0]);
 	}
+	}
+	_putchar('\n');
 }
