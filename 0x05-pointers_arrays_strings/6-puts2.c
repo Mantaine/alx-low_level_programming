@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * puts_half - Prints half of a string
- * iff odd len, n =(lenght of string -1) / 2
+ * puts2 - Prints only one character out
+ * starting with the first one
  * @str: input
- * Return: half of input
+ * Return: print
  *
  */
 
@@ -17,16 +17,15 @@ void puts2(char *str)
 
 	while (*x != '\0')
 	{
-
 		x++;
 		longi++;
 	}
+
 	h = longi - 1;
 	for (o = 0; o <= h ; o++)
 	{
 	if (o % 2 == 0)
 	{
-
 	_putchar(str[0]);
 	}
 	}
