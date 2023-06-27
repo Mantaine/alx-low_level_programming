@@ -9,25 +9,19 @@
  */
 
 void puts2(char *str)
+
 {
-	int longi = 0;
+	int i = 0;
 	int h = 0;
-	char *x = str;
-	int o;
 
-	while (*x != '\0')
+	while (str[h] != '\0')
 	{
-		x++;
-		longi++;
+	h++;
 	}
 
-	h = longi - 1;
-	for (o = 0; o <= h ; o++)
+	for (i = 0; i < h ; i += 2)
 	{
-	if (o % 2 == 0)
-	{
-	_putchar(str[0]);
-	}
+	_putchar(str[i]);
 	}
 	_putchar('\n');
 }
