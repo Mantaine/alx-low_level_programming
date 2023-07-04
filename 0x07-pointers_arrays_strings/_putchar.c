@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
  * _putchar.c - writes character c to stdout
@@ -7,7 +8,7 @@
  * Return: On success return 1
  * On error: Return -1, and errno is set appropriately.
  */
-int putchar(char c)
+int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
