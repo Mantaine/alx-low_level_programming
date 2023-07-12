@@ -9,28 +9,29 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **zee;
+	int **mee;
 	int x, y;
 
 	if (width <= 0 || height <= 0)
 	return (NULL);
-	zee = malloc(sizeof(int *) * height);
-	if (zee == NULL)
+	mee = malloc(sizeof(int *) * height);
+	if (mee == NULL)
+	return (NULL);
 	for (x = 0; x < height; x++)
 	{
-	zee[x] = malloc(sizeof(int) * width);
-	if (zee[x] == NULL)
+	mee[x] = malloc(sizeof(int) * width);
+	if (mee[x] == NULL)
 	{
 	for (; x >= 0; x--)
-	free(zee[x]);
-	free(zee);
+	free(mee[x]);
+	free(mee);
 	return (NULL);
 	}
 	}
 	for (x = 0; x < height; x++)
 	{
 	for (y = 0; y < width; y++)
-	zee[x][y] = 0;
+	mee[x][y] = 0;
 	}
-	return (zee);
+	return (mee);
 }
