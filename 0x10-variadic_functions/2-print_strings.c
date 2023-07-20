@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_numbers - prints numbers followed by a new line
+ * print_strings - prints strings followed by a new line
  * @n: number of strins passed to function
  * @separator: separator between two numbers
  * Return: Always 0
